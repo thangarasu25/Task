@@ -39,7 +39,7 @@ const register = async (req, res) => {
     const salt = await bcrypt.genSalt();
     const hashedPassword = await bcrypt.hash(password, salt);
     const newUser = new userModel({
-      user, email, password: hashedPassword, role, tradename, mobileNo, 
+      user, email, password: hashedPassword, role, mobileNo, 
     });
     await newUser.save();
     res.status(201).send("User created successfully");
