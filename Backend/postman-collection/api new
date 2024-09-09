@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "0eb13c1e-191b-427d-accb-9effd666d9ed",
+		"name": "getall users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15557906"
+	},
+	"item": [
+		{
+			"name": "postman collection",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tradefile",
+									"type": "file",
+									"src": "/C:/Users/Light Fury/Pictures/ashok.jpg"
+								},
+								{
+									"key": "userid",
+									"value": "648f28fb18addd34da7f2cb2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:5000/users/tradeupload"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "aatharfile",
+									"type": "file",
+									"src": "/C:/Users/Light Fury/Pictures/ashok.jpg"
+								},
+								{
+									"key": "userid",
+									"value": "648f28fb18addd34da7f2cb2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:5000/users/aatharupload"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/users/panupload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "panfile",
+									"type": "file",
+									"src": "/C:/Users/Light Fury/Pictures/ashok.jpg"
+								},
+								{
+									"key": "userid",
+									"value": "648f28fb18addd34da7f2cb2",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "localhost:5000/users/panupload"
+					},
+					"response": []
+				},
+				{
+					"name": "aathar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "aatharfile",
+									"type": "file",
+									"src": "/C:/Users/Light Fury/Pictures/ashok.jpg"
+								},
+								{
+									"key": "userid",
+									"value": "648f28fb18addd34da7f2cb2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:5000/users/aatharupload"
+					},
+					"response": []
+				},
+				{
+					"name": "tradeupload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tradefile",
+									"type": "file",
+									"src": "/C:/Users/Light Fury/Pictures/ashok.jpg"
+								},
+								{
+									"key": "userid",
+									"value": "648f28fb18addd34da7f2cb2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:5000/users/tradeupload"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:5000/users/allusers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4Nzc4MjR9.wNTddPgFB7CijAoD8yxh_T1xbi9opKezC_AbS4_cj0g",
+						"type": "text"
+					}
+				],
+				"url": "localhost:5000/users/allusers"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"email\":\"thangarasus@gmail.com\", \"password\":\"12s3412\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/users/register",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n\"user\": \"gold\",\r\n  \"password\": \"Thangam123\",\r\n  \"role\": \"Admin\",\r\n  \"tradename\" : \"test\",\r\n  \"email\": \"thangam@gmail.com\",\r\n  \"mobileNo\": \"9095495105\",\r\n  \"tradeLicenseNo\":\"dsafd\",\r\n  \"gstNo\": \"sas343\",\r\n  \"addressLine1\": \"asdf\",\r\n  \"addressLine2\":\"asdf\",\r\n  \"city\": \"asdf\",\r\n  \"pincode\":\"904856\",\r\n  \"state\": \"asdf\",\r\n  \"aadhaar\": \"aathar\",\r\n  \"pan\": \"pan\",\r\n  \"gst\": \"String\"\r\n\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/product/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4ODUwNzh9.rIZeC9s5nRvn-g--WwSRDcDZK7ktayJyHFgpdzoMdt4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"Milk bikies\",\r\n    \"description\": \"bicate eating prepose\",\r\n    \"price\": 1233,\r\n    \"quantity\": 150,\r\n    \"rating\": 5.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/product/add"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/product/updateproduct/647c87f041a99b7be547f8db",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"payload": "{}",
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4ODUwNzh9.rIZeC9s5nRvn-g--WwSRDcDZK7ktayJyHFgpdzoMdt4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"britenia biscate\",\r\n    \"description\": \"bicate eating prepose\",\r\n    \"price\": 1233,\r\n    \"quantity\": 150,\r\n    \"rating\": 5.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/product/updateproduct/647c87f041a99b7be547f8db?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4ODUwNzh9.rIZeC9s5nRvn-g--WwSRDcDZK7ktayJyHFgpdzoMdt4",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"updateproduct",
+						"647c87f041a99b7be547f8db"
+					],
+					"query": [
+						{
+							"key": "x-auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4ODUwNzh9.rIZeC9s5nRvn-g--WwSRDcDZK7ktayJyHFgpdzoMdt4"
+						}
+					]
+				},
+				"description": "update product"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/product/getproduct?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4ODUwNzh9.rIZeC9s5nRvn-g--WwSRDcDZK7ktayJyHFgpdz",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2MwN2E0YzY2NzdiYzNmNWE1YjJjOSIsInVzZXIiOiJ0aGFuZ2FtIiwiZW1haWwiOiJ0aGFuZ2FyYXN1c0BnbWFpbC5jb20iLCJpYXQiOjE2ODU4ODUwNzh9.rIZeC9s5nRvn-g--WwSRDcDZK7ktayJyHFgpdzoMdt4",
+						"type": "text"
+					}
+				],
+				"url": "localhost:5000/product/getproduct"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/users/gstupload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "gstfile",
+							"type": "file",
+							"src": "/C:/Users/Light Fury/Pictures/ashok.jpg"
+						},
+						{
+							"key": "userid",
+							"value": "648f28fb18addd34da7f2cb2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:5000/users/gstupload"
+			},
+			"response": []
+		}
+	]
+}
